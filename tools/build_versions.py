@@ -20,6 +20,8 @@ def main():
                     continue
                 elif req.startswith('#'):
                     continue
+                elif req.startswith('-e git'):
+                    continue
 
                 # Get the name of the package
                 req = re.split('<|>|=|!|;', req)[0]
