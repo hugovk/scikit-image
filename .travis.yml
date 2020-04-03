@@ -129,6 +129,7 @@ before_install:
       fi
     - ccache --zero-stats
     - export PATH=/usr/lib/ccache:${PATH}
+    - pip install -e "git+https://github.com/pmrowla/Pillow.git@2e6adc57934dcdff95887b377be621476120b789#egg=pillow"
     - source tools/travis/before_install.sh
     - which python; python --version
     - pip list
